@@ -1,0 +1,37 @@
+① Attached file name in email.
+   ▶ <FileName>-<Member>-<Version>.<extension>
+   Ex: LinuxCommand-TrongHieu-Ver0.1.0.xls
+       API_Flow-TrongHieu-Ver0.1.0.xls
+
+② Attached file name in redmine
+   There are 5 parts
+   ▶ Project name
+	 ◆ Optional: In researching document, this may be absent
+   ▶ Task number (task_id) group
+     ◆ Optional: In researching document, this may be absent
+     ◆ Structure: Task{task_id}																			
+     ※ Note																																				
+       ▷ Task_id must contain 5 digits, eg: 00154, 78345
+   ▶ Document name
+	 ◆ Require
+   ▶ Version
+     ◆ Required
+     ◆ Structure: [Ver]{version group number}
+     ※ Note
+       ▷ You should start numbering at 0.1.0 with in-house task
+       ▷ You should start numbering at 1.0.0 when send to client
+     ※ Note:	
+       ◎ The separator between 2 sections is underscore (-)
+       ◎ Distinguish between words in section by using camel-type or hyphen(_)
+
+   ■ Example																				
+	 PHP_Training-Task00012-TestCase-Ver0.1.0.xls
+          ①	           ②        ③        ④	
+		
+   ※ In case of compressing document:
+     Please add the date (YYYYMMDD) instead of version.
+     -> PHP_Training-Task00012-API_Design-20140220.zip
+
+③ Account Git
+   ▶ ho-ten-mulodo
+   Ex: If my name is "Nguyen Trong Hieu", my git account should be "nguyen-hieu-mulodo".
